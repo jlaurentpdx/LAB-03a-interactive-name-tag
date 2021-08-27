@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Nametag Generator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Rampart+One&family=Special+Elite&display=swap');
+  </style>
+</head>
+<header>Nametag Generator</header>
+<body>
+  <div class="paper">
+    <p id="name-tag" class="name-tag">
+      <strong class="greeting">Hello</strong>
+      my name is
+      <em class="name-and-pronouns">
+        <em id="name" class="name">Mr. Peanutbutter</em>
+        <em id="pronouns" class="pronouns">they/them</em>
+      </em>
+    </p>
+  </div>
+
+  <section class="inputs">
+    <label>Name: <input id="name-input" type="text" maxlength="16"></label><br>
+    <label>Pronouns: <input id="pronouns-input" type="text" maxlength="16"></label><br>
+
+    <label>Color: 
+      <select name="color-select" id="color-select">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="lightpink">Pink</option>
+        <option value="lightgreen">Green</option>
+      </select><br>
+    </label>
+
+    <label>Font: 
+      <select name="font-select" id="font-select">
+        <option value="Cursive">Cursive</option>
+        <option value="Pacifico">Pacifico</option>
+        <option value="Permanent Marker">Permanent Marker</option>
+        <option value="Rampart One">Rampart One</option>
+        <option value="Special Elite">Special Elite</option>
+      </select><br>
+    </label>
+
+    <button id="update-button">Update your nametag</button>
+  </section>
+
+  <script src="app.js" type="module"></script>
+</body>
+<footer>- codo by jojo, 2021</footer>
+</html>
